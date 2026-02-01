@@ -10,6 +10,10 @@
       frrExpoInterface = "fiber1";
     };
     services.ssh.enable = true;
+    services.alloy = {
+      enable = true;
+      remoteWrite = "10.128.3.20";
+    };
 
     users.conjones.enable = true;
     users.djacu.enable = true;
