@@ -12,7 +12,7 @@
     services.ssh.enable = true;
     services.alloy = {
       enable = true;
-      remoteWrite = "http://10.128.3.20:3200/api/v1/push";
+      remoteWrite.URL = "http://10.128.3.20:3200/api/v1/push";
     };
     users.conjones.enable = true;
     users.djacu.enable = true;
