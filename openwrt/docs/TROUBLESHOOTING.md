@@ -15,9 +15,9 @@
 - Management interface status `ifconfig mgmt-br`
 - Toggle interface up and down `ip link set mgmt-br down | up`
 
-# Pull LLDP
+# LLDP to show connected device.
 
-Use `lldpcli show nei`
+`lldpcli show nei` will show:
 
 ```
 System name: name of switch plugged
