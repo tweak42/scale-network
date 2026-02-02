@@ -1,5 +1,13 @@
 # Troubleshooting
 
+## Terminal in via serial port:
+
+- Connect using a data USB-C cable to the console port on the front of the AP.
+- Run `sudo dmesg | tail` to find the assigned tty interface.
+  - Usually `/dev/ttyACM0` or `/dev/ttyUSB0`
+- Connect to the console using `tio /dev/ttyACM0`
+  - (Ensure your account is in the dialout group `sudo usrmod -a -G dialout $USER`, logout then reboot)
+
 ## Identifying successful flashes
 
 WPS Led is setup for the following:
