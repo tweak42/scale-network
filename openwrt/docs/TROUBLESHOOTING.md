@@ -15,6 +15,20 @@
 - Management interface status `ifconfig mgmt-br`
 - Toggle interface up and down `ip link set mgmt-br down | up`
 
+# Pull LLDP
+
+Use `lldpcli show nei`
+
+```
+System name: name of switch plugged
+Port ID: what port is connected to the switch
+Port description:
+(cf-conference center)
+(ex-expo floor)
+(infraSLOW & infraFAST)
+If it displays any other info - may connected to PCC network
+```
+
 ## Confirming AP OS version
 
 The following should match the commit hash the images were built from and the version of openwrt. Confirm that the build is
