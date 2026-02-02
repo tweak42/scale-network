@@ -15,8 +15,6 @@
 - Management interface status `ifconfig mgmt-br`
 - Toggle interface up and down `ip link set mgmt-br down | up`
 
-# LLDP to show connected device.
-
 `lldpcli show nei` will show:
 
 ```
