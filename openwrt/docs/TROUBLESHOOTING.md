@@ -9,13 +9,16 @@
   - If permissions denied ensure account is in the dialout group:
   - `sudo usermod -a -G dialout $USER`, logout then reboot.
 
+
 ## Check ethernet interfaces
 
 - List all interfaces `ifconfig | less`
 - Management interface status `ifconfig mgmt-br`
 - Toggle interface up and down `ip link set mgmt-br down | up`
 
-`lldpcli show nei` will show:
+
+## Show connected devices
+`lldpcli show nei` for example will show:
 
 ```
 System name: name of switch plugged
@@ -27,6 +30,7 @@ Port description:
 If it displays any other info - may connected to PCC network
 ```
 
+
 ## Confirming AP OS version
 
 The following should match the commit hash the images were built from and the version of openwrt. Confirm that the build is
@@ -36,6 +40,7 @@ latest:
 ~$ cat /etc/scale-release
 ```
 
+
 ## Identifying successful flashes
 
 WPS Led is setup for the following:
@@ -44,6 +49,7 @@ WPS Led is setup for the following:
 even scale conferences - LED ON 
 odd scale conferences  - LED OFF
 ```
+
 
 ## Static IP interface
 
