@@ -14,7 +14,7 @@
 
 - List all interfaces `ifconfig | less`
 - Management interface status `ifconfig mgmt-br`
-- Toggle interface up and down `ip link set mgmt-br down | up`
+- Toggle interface up | down `ip link set mgmt-br down | up`
 
 
 ## Show connected devices
