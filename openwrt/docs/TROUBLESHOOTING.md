@@ -15,6 +15,14 @@
 - Management interface status `ifconfig mgmt-br`
 - Toggle interface up and down `ip link set mgmt-br down | up`
 
+## Confirming AP OS version
+
+The following should match the commit hash the images were built from and the version of openwrt. Confirm that the build is
+latest:
+
+```
+~$ cat /etc/scale-release
+```
 
 ## Identifying successful flashes
 
@@ -37,11 +45,3 @@ Dedicated static IP access on AP is possible via WAN(yellow) port and setting a 
 
 > Assumes interface is enp5s0
 
-## Confirming AP OS version
-
-The following should match the commit hash the images were built from and the version of openwrt. Confirm that the build is
-latest:
-
-```
-~$ cat /etc/scale-release
-```
