@@ -6,7 +6,7 @@
 - Run `sudo dmesg | tail` to find the assigned tty interface.
   - Usually `/dev/ttyACM0` or `/dev/ttyUSB0`
 - Connect to the console using `tio /dev/ttyACM0`
-  - (Ensure your account is in the dialout group `sudo usrmod -a -G dialout $USER`, logout then reboot)
+  - (Ensure your account is in the dialout group `sudo usermod -a -G dialout $USER`, logout then reboot)
 
 ## Identifying successful flashes
 
