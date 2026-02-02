@@ -9,6 +9,13 @@
   - If permissions denied ensure account is in the dialout group:
   - `sudo usermod -a -G dialout $USER`, logout then reboot.
 
+## Check ethernet interfaces
+
+- List all interfaces `ifconfig | less`
+- Management interface status `ifconfig mgmt-br`
+- Toggle interface up and down `ip link set mgmt-br down | up`
+
+
 ## Identifying successful flashes
 
 WPS Led is setup for the following:
